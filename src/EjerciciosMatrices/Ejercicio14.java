@@ -29,8 +29,8 @@ public class Ejercicio14 {
     public static int contarParesEnMatriz(int[][] matNums){
         int iCounter = 0;
 
-        for (int iPosFila = 0; iPosFila < Constantes.MAX_ROW_LENGTH_MAT_EJ13; iPosFila++) {
-            for (int iPosColumna = 0; iPosColumna < Constantes.MAX_COL_LENGTH_MAT_EJ13; iPosColumna++) {
+        for (int iPosFila = 0; iPosFila < Constantes.MAX_ROW_LENGTH_MAT_EJ14; iPosFila++) {
+            for (int iPosColumna = 0; iPosColumna < Constantes.MAX_COL_LENGTH_MAT_EJ14; iPosColumna++) {
                 if (matNums[iPosFila][iPosColumna] % 2 == 0){
                     iCounter++;
                 }

@@ -14,9 +14,9 @@ public class Ejercicio18 {
         System.out.printf("Introduce un numero %n");
         iNum2 = sc.nextInt();
 
-        System.out.printf("La suma es %d", suma(iNum1, iNum2));
+        System.out.printf("La suma es %d", sumar(iNum1, iNum2));
     }
-    public static int suma(int iNum1, int iNum2){
+    public static int sumar(int iNum1, int iNum2){
         return iNum1 + iNum2;
     }
 }

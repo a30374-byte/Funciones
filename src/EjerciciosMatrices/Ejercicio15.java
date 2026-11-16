@@ -10,7 +10,8 @@ public class Ejercicio15 {
 
         inputMatrix(matNums);
 
-        System.out.printf("La suma es %d", sumaTotalMatriz(matNums));
+        int iTotal = sumaTotalFilaMatriz(matNums);
+        System.out.printf("La suma es %d", iTotal);
     }
 
     public static void inputMatrix(int[][] matNums){
@@ -34,8 +35,7 @@ public class Ejercicio15 {
                 iTotalFila += matNums[iPosFila][iPosColumna];
             }
         }
-
-        return iTotal;
+        return iTotalFila;
     }
 
 }
