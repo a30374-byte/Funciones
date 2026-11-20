@@ -10,12 +10,18 @@ public class Ejercicio10 {
 
         int[] arrNums = new int[Constantes.MAX_LENGTH_ARRAY];
 
+        System.out.printf("Introduce 5 numeros%n");
         for (int i = 0; i < Constantes.MAX_LENGTH_ARRAY; i++) {
-            System.out.printf("Introduce un numero%n");
             arrNums[i] = sc.nextInt();
         }
-        for (int i = Constantes.MAX_LENGTH_ARRAY - 1; i >= 0; i--) {
+
+        int i = Constantes.MAX_LENGTH_ARRAY - 1;
+        escribeArray(arrNums, i);
+    }
+    public static void escribeArray(int[] arrNums, int i) {
+        if (i >= 0) {
             System.out.printf("%d ", arrNums[i]);
+            escribeArray(arrNums, i - 1);
         }
     }
 }

@@ -9,15 +9,22 @@ public class Ejercicio12 {
 
         int[][] matNums = new int[Constantes.MAX_DIMENSION_LENGTH_MAT_EJ12][Constantes.MAX_DIMENSION_LENGTH_MAT_EJ12];
 
+        inputMatrix(sc, matNums);
+
+        System.out.println();
+
+        outputMatrix(matNums);
+    }
+    public static void inputMatrix(Scanner sc, int[][] matNums) {
         for (int iPosFila = 0; iPosFila < Constantes.MAX_DIMENSION_LENGTH_MAT_EJ12; iPosFila++) {
             for (int iPosColumna = 0; iPosColumna < Constantes.MAX_DIMENSION_LENGTH_MAT_EJ12; iPosColumna++) {
                 System.out.printf("Introduce el valor [%s][%s]%n", iPosFila, iPosColumna);
                 matNums[iPosFila][iPosColumna] = sc.nextInt();
             }
         }
+    }
 
-        System.out.println();
-
+    public static void outputMatrix(int[][] matNums) {
         for (int iPosFila = 0; iPosFila < Constantes.MAX_DIMENSION_LENGTH_MAT_EJ12; iPosFila++) {
             for (int iPosColumna = 0; iPosColumna < Constantes.MAX_DIMENSION_LENGTH_MAT_EJ12; iPosColumna++) {
                 System.out.printf("%d", matNums[iPosFila][iPosColumna]);
